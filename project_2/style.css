@@ -1,0 +1,38 @@
+html {
+    background: linear-gradient(135deg, #FCB7D6, #48C6EF);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.clock {
+    border-radius: 50%;
+    border: 1rem solid  #967b11;
+    margin: 10rem auto;
+    min-height: 40vh;
+    max-width: 40vh;  
+    position: relative;  
+    
+}
+
+.clock_hand {
+    border-bottom: 2px solid #000;
+    margin: -1rem;    
+    width: 20vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 50%; 
+     
+    /* transform: translate(-50%, -50%); */
+}
+
+.sec_hand {    
+    
+    border-color: red;
+}
