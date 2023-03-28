@@ -7,9 +7,41 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
+    
+
+}
+.container {  
+     
+    height: 100vh;
+    width: 100vh;  
+    margin: 0 auto;  
+}
+.clock {  
+    height: 50%;
+    width: 50%;
+    border: 2px solid pink;
 }
 
-.clock {
+.clock_hand {
+    stroke: #000;
+    stroke-linecap: round;
+    
+}
+.sec_hand{
+    stroke-width: 2px; 
+    stroke: blue;   
+}
+.minute_hand{
+    stroke-width: 4px;    
+}
+.hour_hand{
+    stroke-width: 6px;    
+}
+
+
+
+
+/* .clock {
     border-radius: 50%;
     border: 1rem solid  #967b11;
     margin: 10rem auto;
@@ -29,10 +61,10 @@ body, html {
     transform: rotate(90deg);
     transform-origin: 50%; 
      
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
 
-.sec_hand {    
-    
+.sec_hand {   
+    transform: rotate(270deg);    
     border-color: red;
-}
+} */

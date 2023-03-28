@@ -8,10 +8,33 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="clock">
-      <div class="clock_hand minute_hand"></div>
-      <div class="clock_hand sec_hand"></div>
-      <div class="clock_hand hour_hand"></div>
+    <div class="container">
+      <svg class="clock">
+        <circle
+          class="clock_circle"
+          r="120"
+          cx="50%"
+          cy="50%"
+          fill="none"
+          stroke="red"
+          stroke-width="5"
+        />
+        <line class="clock_hand sec_hand" x1="47%" y1="25%" x2="50%" y2="50%" />
+        <line
+          class="clock_hand minute_hand"
+          x1="50%"
+          y1="27%"
+          x2="50%"
+          y2="50%"
+        />
+        <line
+          class="clock_hand hour_hand"
+          x1="50%"
+          y1="35%"
+          x2="50%"
+          y2="50%"
+        />
+      </svg>
     </div>
   </body>
 </html>
