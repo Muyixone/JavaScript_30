@@ -19,16 +19,25 @@
           stroke="red"
           stroke-width="5"
         />
-        <line class="clock_hand sec_hand" x1="47%" y1="25%" x2="50%" y2="50%" />
         <line
-          class="clock_hand minute_hand"
+          id="sec_hand"
+          class="clock_hand"
+          x1="50%"
+          y1="25%"
+          x2="50%"
+          y2="50%"
+        />
+        <line
+          id="minute_hand"
+          class="clock_hand"
           x1="50%"
           y1="27%"
           x2="50%"
           y2="50%"
         />
         <line
-          class="clock_hand hour_hand"
+          id="hour_hand"
+          class="clock_hand"
           x1="50%"
           y1="35%"
           x2="50%"
@@ -36,5 +45,6 @@
         />
       </svg>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
