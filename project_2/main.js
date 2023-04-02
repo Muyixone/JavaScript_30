@@ -17,8 +17,7 @@ const secInterval = setInterval(() => {
   minuteHand.style.transform = `rotate(${degreesMin}deg)`;
 
   //The Hour-hand of the clock.
-  // //
-  //   const hours = time.getHours() % 12;
-  //   const degreesHour = hours * 30;
-  //   hourHand.style.transform = `rotate(${degreesHour}deg`;
+  const hours = time.getHours() % 12;
+  const degreesHour = hours * 30;
+  hourHand.style.transform = `rotate(${degreesHour}deg`;
 }, 1000);
