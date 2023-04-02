@@ -18,17 +18,16 @@ body, html {
     border: 2px solid pink;
     position: absolute;
     top: 25%;
-    left: 25%;    
-    transition: all 0.07s ease-in;
-    
+    left: 25%;  
+    transition: all 0.07s;
+    transition-timing-function: cubic-bezier(0, 1.55, 0.07, 0.54);   
 }
 .clock_hand {
     stroke: #000;
     stroke-linecap: round;
     position: relative; 
     transform-origin: center;
-    transform: rotate(360deg);
-    
+    transform: rotate(360deg);   
 }
 
 #sec_hand{
