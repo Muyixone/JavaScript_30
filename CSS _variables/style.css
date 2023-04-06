@@ -1,5 +1,5 @@
 :root {
-    --spacing: 4px;
+    --spacing: 10px;
     --Blur: blur(8px);
     --base-color: #979292;
     --bg-color: #d3d3d3;   
@@ -44,16 +44,18 @@ body, html {
 
 .img {
     height: 200px;
-    width: 100px;   
+    width: 100px;           
 }
 
 #wall_image {
     filter: var(--Blur); 
+    
 }
 
 img {
     margin-top: 5rem;
     height: 100%;
-    width: 100%;    
+    width: 100%;     
+    border: var(--spacing) solid var(--base-color);       
 }
  
