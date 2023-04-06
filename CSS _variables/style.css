@@ -29,7 +29,7 @@ body, html {
 
 }
 
-#spacing {
+#spacing, #blur {
     appearance: none; /*Overrides the default CSS styling*/
     background: var(--bg-color);
     border-radius: .8em;
@@ -38,7 +38,8 @@ body, html {
     opacity: .7;
     transition: opacity .2s;
 }
-#spacing:hover {
+#spacing:hover,
+#blur:hover {
     opacity: 1;
 }
 
@@ -48,14 +49,14 @@ body, html {
 }
 
 #wall_image {
-    filter: var(--Blur); 
-    
+    filter: var(--Blur);    
+    border: var(--spacing) solid var(--base-color);       
 }
 
 img {
     margin-top: 5rem;
     height: 100%;
     width: 100%;     
-    border: var(--spacing) solid var(--base-color);       
+    
 }
  
