@@ -1,15 +1,17 @@
-const slider = document.getElementById('blur');
-const baseColor = document.getElementById('color_picker');
 const rootDom = document.querySelector(':root');
+const blur = document.getElementById('blur');
+const baseColor = document.getElementById('color_picker');
+const borderSpacing = document.getElementById('spacing');
 
 const targetImg = document.getElementById('wall_image');
 
-// slider.oninput = function () {
-//   rootDom.style.setProperty('--Blur', `blur(${this.value}px)`);
-// };
-
-window.addEventListener('input', (event) => {
+function blurItem(event) {
   rootDom.style.setProperty('--Blur', `blur(${event.target.value}px)`);
-
   rootDom.style.setProperty('--base-color', `${event.target.value}`);
+}
+
+blur.addEventListener('input', blurItem);
+baseColor.addEventListener('input', blurItem);
+borderSpacing.addEventListener('input', (e) => {
+  rootDom.style.setProperty('--spacing', `${e.target.value}px`);
 });
