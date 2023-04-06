@@ -1,0 +1,59 @@
+:root {
+    --spacing: 4px;
+    --Blur: blur(8px);
+    --base-color: #979292;
+    --bg-color: #d3d3d3;   
+}
+
+
+
+html {
+    background: linear-gradient(135deg, #FCB7D6, #48C6EF);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head_syle {
+    color: var(--base-color)
+}
+
+#container {
+    text-align: center;
+    margin: 0 auto;
+    height: 90vh;
+    width: 80vh;
+
+}
+
+#spacing {
+    appearance: none; /*Overrides the default CSS styling*/
+    background: var(--bg-color);
+    border-radius: .8em;
+    width: 30%;
+    outline: none;
+    opacity: .7;
+    transition: opacity .2s;
+}
+#spacing:hover {
+    opacity: 1;
+}
+
+.img {
+    height: 200px;
+    width: 100px;   
+}
+
+#wall_image {
+    filter: var(--Blur); 
+}
+
+img {
+    margin-top: 5rem;
+    height: 100%;
+    width: 100%;    
+}
+ 
